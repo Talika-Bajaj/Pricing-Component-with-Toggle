@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+}
+
+:root {
+    /* Primary */
+
+    --Linear_Gradient: linear-gradient(0.25turn, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+    /* Neutral */
+
+    --Very_Light_Grayish_Blue: hsl(240, 78%, 98%);
+    --Light_Grayish_Blue: hsl(234, 14%, 74%);
+    --Grayish_Blue: hsl(233, 13%, 49%);
+    --Dark_Grayish_Blue: hsl(232, 13%, 33%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very_Light_Grayish_Blue);
+    background-image: url('images/bg-top.svg');
+    background-repeat: no-repeat;
+    background-position: right -196px top -38px, left bottom;
+}
+
+main {
+    margin: 50px auto;
+}
+
+.container,
+.data {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: var(--Grayish_Blue);
+    text-align: center;
+}
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    cursor: pointer;
+}
+
+.subscription {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--Light_Grayish_Blue);
+}
+
+.toggle-control {
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-control:hover .toggle-bg {
+    background: var(--Light_Grayish_Blue);
+    cursor: pointer;
+}
+
+.toggle-bg {
+    height: 35px;
+    width: 68px;
+    background: var(--Linear_Gradient);
+    border-radius: 36px;
+}
+
+.toggle-circle {
+    position: absolute;
+    top: 3.2px;
+    background-color: white;
+    height: 28px;
+    width: 30px;
+    border-radius: 50%;
+    /* transition: all 3s ease; */
+}
+
+.transition {
+    transition: all 3s ease;
+}
+
+.right {
+    right: 4px;
+}
+
+.left {
+    left: 4px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+section:nth-of-type(odd) {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+section:nth-of-type(odd) .price-monthly {
+    color: var(--Dark_Grayish_Blue);
+    font-size: 50px;
+}
+
+section:nth-of-type(odd) .price-annually {
+    color: var(--Dark_Grayish_Blue);
+    font-size: 50px;
+}
+
+section:nth-of-type(even) {
+    /* height: 500px; */
+    /* padding: 45px 35px; */
+    background: var(--Linear_Gradient);
+    cursor: pointer;
+    z-index: 10;
+}
+
+section:nth-of-type(even) .price-heading {
+    color: #fff;
+}
+
+section:nth-of-type(even) .price-monthly {
+    font-size: 50px;
+    color: #fff ;
+}
+
+section:nth-of-type(even) .price-annually {
+    font-size: 50px;
+    color: #fff ;
+}
+
+section:nth-of-type(even) .price-info {
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+
+section:nth-of-type(even) hr {
+    height: 1px;
+    background: white;
+    border: 0;
+}
+
+section:nth-of-type(even) .learn-more {
+    background: white;
+    color: var(--Grayish_Blue);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+
+section:nth-of-type(even) .learn-more:hover {
+    background: var(--Linear_Gradient);
+    color: white;
+    border: 1px solid white;
+
+}
+
+.price {
+    padding: 35px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80vw;
+}
+
+.price-heading {
+    font-size: 18px;
+    color: var(--Grayish_Blue);
+    font-weight: 700;
+}
+
+.price-info {
+    font-weight: 700;
+    color: var(--Grayish_Blue);
+    font-size: 15px;
+}
+
+hr {
+    height: 1px;
+    background: var(--Light_Grayish_Blue);
+    border: 0;
+}
+
+.learn-more {
+    background: var(--Linear_Gradient);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.learn-more:hover {
+    background: #fff;
+    color: var(--Grayish_Blue);
+    border: 1px solid var(--Grayish_Blue);
+}
+
+.price-annually {
+    display: none;
+}

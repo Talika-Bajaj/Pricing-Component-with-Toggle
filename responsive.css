@@ -1,0 +1,22 @@
+@media screen and (width> 450px) {
+    .price {
+        width: 350px;
+    }
+}
+
+@media screen and (width> 1100px) {
+    body {
+        background-position: top right, left bottom;
+        background-size: 25%;
+    }
+
+    .data {
+        grid-template-columns: 350px 350px 350px;
+        /* grid-template-columns: 33% 33% 33%; */
+        gap: 0;
+    }
+
+    .price {
+        width: 350px;
+    }
+}
