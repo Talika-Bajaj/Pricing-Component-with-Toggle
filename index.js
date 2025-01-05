@@ -7,7 +7,7 @@ function showImage(params) {
     if (window.innerWidth > 1100) {
         document.body.style.backgroundImage = "url('images/bg-top.svg'), url('images/bg-bottom.svg')";
         document.querySelector("section:nth-of-type(even)").style.height = "500px";
-        document.querySelector("section:nth-of-type(even)").style.padding = "45px 35px";
+        document.querySelector("section:nth-of-type(even)").style.padding = "60px 35px";
     }
     else {
         document.body.style.backgroundImage = "url('images/bg-top.svg')";
@@ -23,7 +23,7 @@ function toggle(params) {
         toggleCircle.classList.add("transition");
         toggleCircle.classList.remove("right");
         priceAnnually.forEach(price => {
-            price.style.display = "block";
+            price.style.display = "flex";
         })
         priceMonthly.forEach(price => {
             price.style.display = "none";
@@ -38,7 +38,7 @@ function toggle(params) {
         })
 
         priceMonthly.forEach(price => {
-            price.style.display = "block";
+            price.style.display = "flex";
         })
     }
 }
